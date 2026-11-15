@@ -43,7 +43,14 @@ h2:focus{outline:none}
 
 .research-entry{padding:2rem 0;border-bottom:1px solid #ffffff29}
 .research-entry:last-child{border-bottom:0}
-.research-entry h3{font-size:clamp(1.8rem,4vw,2.6rem);margin:0}
+.research-entry :is(h2,h3){
+  font-size:clamp(1.8rem,4vw,2.6rem);
+  letter-spacing:normal;
+  color:#f4d4bd;
+  margin:0;
+}
+.code-project-header{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.code-project-logo{display:block;width:8rem;height:auto}
 .research-entry .research-subtitle{color:#f4d4bd;margin-top:.6rem;font-size:1.1rem}
 .research-entry .publication-meta{font-size:.9rem;color:#bdb8c5}
 .research-figure{margin:2rem 0;max-width:100%}
